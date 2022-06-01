@@ -1,0 +1,60 @@
+<%- include('../partials/header.ejs')%>
+
+<form id="newEvent" action = '/connections' method = 'POST'>
+    <h1>Fill out the details for your new event!</h1>
+
+    <div class='new'>
+    <label class="lbl">Topic</label>
+    <input class="inpt" type="text" placeholder="Topic" name="topic" required>
+    </div>
+    
+    <div class='new'>
+    <label class="lbl">Title</label>
+    <input class="inpt" type="text" placeholder="Title" name="title" required>
+    </div>
+
+    <div class='new'>
+    <label class="lbl"> Details</label>
+    <textarea class="inpt" type="text" placeholder="Details" name="content" required></textarea>
+    </div>
+
+    <div class='new'>
+    <label class="lbl">Where</label>
+    <input class="inpt"type="text" placeholder="Location" name="location" required>
+    </div>
+
+    <div class='new'>
+    <label class="lbl">Date</label>
+    <input class="inpt" type="date" placeholder="Date" type="date" name="date" required>
+    </div>
+
+    <div class='new'>
+    <label class="lbl">Start</label>
+    <input class="inpt" type="time" placeholder="Start Time" type="time" name="start" required>
+    </div>
+
+    <div class='new'>
+    <label class="lbl">End</label>
+    <input class="inpt" type="time" placeholder="End Time" type="time" name="end" required>
+    </div>
+
+    <div class='new'>
+    <label class="lbl">Image URL</label>
+    <input class="inpt" type="text" placeholder="Image URL" type="url" name="image" required>
+    </div>
+
+    <button id="newBtn">Create Connection</button>
+</form>
+</div>
+<%- include('../partials/footer.ejs')%>
+
+
+
+
+
+
+
+
+
+
+    

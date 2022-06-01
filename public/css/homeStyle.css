@@ -1,0 +1,398 @@
+.header {
+    overflow: hidden;
+    background-color: lightblue;
+    width: 100%;
+    height: 12%;
+}
+
+#home {
+    font-size: larger;
+    text-align: center;
+    background-color: lightblue;
+    margin: 5% 10% 5% 10%;
+    padding: 3%;
+    border-radius: 25px;
+    width: 75%;
+    height: 50%;
+}
+
+#home p {
+    text-align: center;
+    font-size: larger;
+}
+
+#home img {
+    height: 60%;
+    width: 30%;
+}
+
+#home a {
+    position: absolute;
+    bottom: 18%;
+    left: 43%;
+    height: 1%;
+    width: 15%;
+    text-align: center;
+}
+
+
+#center {
+    text-align: center;
+    margin-right: 20%;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: right;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+#connectionButtons button {
+    padding: 1% 1% 1% 1%;
+    margin-top: 0%;
+    width:20%;
+    height: 5%;
+    margin-left: 60%;
+}
+
+
+.header-right a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.header-right {
+    float: right;
+    display: block;
+}
+
+#image {
+   width: 75px;
+   height: auto;
+   background-color: transparent;
+}
+
+#title {
+    padding: 20px;
+    float: left;
+}
+
+#drinkContent {
+    color: black;
+    text-align: justify;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 60%;
+   
+   
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+
+footer {
+    clear: both;
+    background-color: lightblue;
+    padding: 1%;
+    position: fixed;
+    margin-left: -1%;
+    width: 100%;
+    bottom: 0%;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    margin: 1%;
+}
+
+.connections {
+    color: black;
+    text-align: center;
+    padding: 0% 1% 1% 1%;
+    font-size: 25px;   
+}
+
+
+
+.drinks {
+    color: black;
+    text-align: center;
+}
+
+.events {
+    text-align: center;
+    
+}
+
+#coke {
+    width:  500px;
+    height: 500px;
+    object-fit: cover;
+    float: left;
+}
+
+.buttons {
+    float: inline-start;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+#details {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 4px;
+}
+
+.info {
+    color: black;
+    text-align: justify;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    left: 50px;
+}
+
+form label {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#rsvpForm {
+    float: right;
+    margin-left: 70%;
+   
+}
+
+
+
+
+
+
+
+/* Style inputs */
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    align-content: center;
+  }
+
+
+    #new input, textarea{
+    width : 50%;
+    display: inline-block;
+    box-sizing: border-box;
+
+    } 
+
+td {
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.align-top {
+    vertical-align: top;
+}
+
+.align-right{
+    text-align: right;
+    }
+    
+    .fixed-width{
+    width: 300px;
+    }
+
+    #edit {
+        margin-left: 30%;
+        margin-right: 40%;
+        margin-top: 10px;
+        border-radius: 25px;
+        background: aquamarine;
+        padding: 20px;
+        
+      }
+
+
+
+#button {
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    background: aquamarine;
+    padding: 1%;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+/* mouse over link */
+#button:hover {
+    color: hotpink;
+  }
+
+
+#return {
+font: bold 20px Arial;
+text-decoration: none;
+background-color: #EEEEEE;
+color: #333333;
+padding: 2px 6px 2px 6px;
+border-top: 1px solid #CCCCCC;
+border-right: 1px solid #333333;
+border-bottom: 1px solid #333333;
+text-align: center;
+}
+
+
+
+
+
+/** New Connection page **/
+#newEvent {
+    
+    margin: 1% 30% 1% 30%;
+    height: max-content;
+    padding:20px;
+    background-color: lightblue;
+    border-radius: 25px;
+    border: black;
+    border-width: 20px;
+    box-shadow: 0 0 3px 0;
+}
+
+#newEvent h1 {
+    text-align: center;
+}
+
+.new .lbl {
+  font-size: large;
+  display: inline-block;
+  width: 50px;
+}
+
+.new input[type=text] {
+ width: 600px;
+ display: inline-table;
+}
+
+.new input[type=date] {
+    width: 600px;
+    padding: 1% 1% 1% 1%;
+}
+
+.new input[type=time] {
+    width: 600px;
+    padding: 1% 1% 1% 1%;
+}
+
+.new textarea {
+    width: 600px;
+    margin-top: 3%;
+}
+
+.newBtn {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+    height: 5%;
+    padding: 1%;
+}
+
+.newBtn:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+
+.success {
+    background: rgba(108, 192, 112, 0.7);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  
+  .error {
+    background: rgba(255, 102, 51, 0.7);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+  }
+
+  .content {
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+ .connectionTable, .connectionTable th, .connectionTable td {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: left;
+ }
+
+
+
+ .float-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1%;
+    height: 77%;
+    width: 100%;
+ }
+
+ .float-left {
+    height: 67%;
+    padding: 2%;
+   
+}  
+
+.float-right {
+    height: 100%;
+    padding: 2%;
+    text-align: center;
+}
+
+
+.float-rightMini {
+    margin-top: 10%;
+    height: 100px;
+    width: 500px;  
+}
+
+
+
+.float-leftMini button{
+   float: 1% 1% 1% 1%;
+    margin-bottom: 1%;
+    text-align: center;
+}

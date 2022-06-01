@@ -1,0 +1,47 @@
+<html>
+    <link rel="stylesheet" href="../../css/homeStyle.css">
+    <div class="header">
+      <a href="/"><img src="../../images/HighBall.png" id="Image" ></a>
+      <h1 id="Title">Drinklopedia</h1>
+  
+      <div id="center">
+        <%if(user){%>
+          <h3 id="welcome">Welcome, <%= firstName%>!</h3>
+          <% } %>
+      </div>
+    
+        <div class="header-right">
+          <a  href="/connections">Connections List</a>
+          <%if(!user){%>
+          <a  href="/users/login">Login</a>
+          <a  href="/users/new">Sign Up</a>
+          <%} else {%>
+          <a  href="/users/profile">Profile</a>
+          <a  href="/users/logout">Log out</a>
+          <a  href="/connections/new">Create a Connection</a>
+            <% } %>
+            
+            
+          </div>
+          
+      </div>
+     
+
+      
+
+      <% if(errorMessages.length > 0) {%>
+        <% errorMessages.forEach(message=>{%>
+            <div class='error'>
+                <%=message%>
+            </div>
+            <%});%>
+                <%}%>
+    
+                    <% if(successMessages.length > 0) {%>
+    
+                        <% successMessages.forEach(message=>{%>
+                            <div class='success'>
+                                <%=message%>
+                            </div>
+                            <%});%>
+                                <%}%>

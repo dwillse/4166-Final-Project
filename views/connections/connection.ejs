@@ -1,0 +1,53 @@
+<%- include('../partials/header.ejs')%>
+
+<div class="float-container">
+
+
+<div class="float-left">
+<img id="coke" src="<%= connection.image%>">
+<h1 class="info"><%= connection.title%></h1>
+<h3 class="info">Hosted by: <%= connection.host.firstName + ' ' + connection.host.lastName%></h3>
+<h3 class="info">Lessons Start from: <%- connection.start.toLocaleString()%> to <%- connection.end.toLocaleString()%><h3>
+<h3 class="info">Date: <%- connection.date.toLocaleString() %></h3>
+<h3 class="info">Location: <%- connection.location%></h3>
+<p id="connectionContent"><%- connection.content%></p>
+
+    <div class="float-rightMini">
+    <a id="return" href="../connections">Return to Class Lists</a>
+    </div>
+    <%if (user == connection.host._id) {%>
+    <div class="float-leftMini">
+    <form  id="connectionButtons">
+    <button type="submit" formmethod="GET" formaction="../connections/<%= connection.id%>/edit">Edit</button>
+    <button type="submit" formmethod="POST" formaction="./<%= connection.id%>?_method=DELETE">Delete</button>
+    </form>
+   
+</div>
+</div>
+
+<%} else if (user && user != connection.host._id) {%>
+
+
+
+
+
+<div id="float-right">
+<form>
+<% if(rsvps >= 0) { %>
+    <h3><%= rsvps%> people are attending</h3>
+<%}%>
+<h3>Would you like to RSVP?</h3>
+<button type="submit" formmethod="POST" formaction="/connections/<%= connection.id%>/rsvp" name="rsvp" value="Maybe">Maybe</button>
+<button type="submit" formmethod="POST" formaction="/connections/<%= connection.id%>/rsvp" name="rsvp" value="No">No</button>
+<button type="submit" formmethod="POST" formaction="/connections/<%= connection.id%>/rsvp" name="rsvp" value="Yes">Yes</button>
+</form>
+</div>
+<%}%>
+
+
+
+</div>
+
+
+
+<%- include('../partials/footer.ejs')%>

@@ -1,0 +1,51 @@
+<%- include('../partials/header.ejs')%>
+
+    <form id="newEvent" method = "POST" action = "/connections/<%= connection.id%>?_method=PUT">
+        <h1>Edit the details of your event!</h1>
+    
+        <div class='new'>
+        <label class="lbl">Topic</label>
+        <input class="inpt" type="text" value="<%=connection.topic%>" name="topic" required>
+        </div>
+        
+        <div class='new'>
+        <label class="lbl">Title</label>
+        <input class="inpt" type="text" value="<%=connection.title%>" name="title" required>
+        </div>
+    
+        <div class='new'>
+        <label class="lbl"> Details</label>
+        <textarea class="inpt" type="text" name="content" required><%=connection.content%></textarea>
+        </div>
+    
+        <div class='new'>
+        <label class="lbl">Where</label>
+        <input class="inpt"type="text" value="<%=connection.location%>" name="location" required>
+        </div>
+    
+        <div class='new'>
+        <label class="lbl">Date</label>
+        <input class="inpt" type="date" value="<%=connection.date%>" type="date" name="date" required>
+        </div>
+    
+        <div class='new'>
+        <label class="lbl">Start</label>
+        <input class="inpt" type="time" value="<%=connection.start%>" type="time" name="start" required>
+        </div>
+    
+        <div class='new'>
+        <label class="lbl">End</label>
+        <input class="inpt" type="time" value="<%=connection.end%>" type="time" name="end" required>
+        </div>
+    
+        <div class='new'>
+        <label class="lbl">Image URL</label>
+        <input class="inpt" type="text" value="<%=connection.image%>" type="url" name="image" required>
+        </div>
+    
+        <button id="newBtn">Update Connection</button>
+    </form>
+    </div>
+
+    </div>
+    <%- include('../partials/footer.ejs')%>

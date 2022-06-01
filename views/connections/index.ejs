@@ -1,0 +1,35 @@
+<%- include('../partials/header.ejs')%>
+    
+<div class="connections">
+<%let topics = new Set(); %>
+<% if(connections.length) { %>
+
+        <%connections.forEach(connection=>{%>
+            <%topics.add(connection.topic);%>
+        <%});
+        
+         } else {%>
+            <p class="connections">There are no events to display.</p>
+        <%}%>
+
+                
+<% if(topics.size){%>
+    <%topics.forEach(function(title){%>
+        <h3><%= title%></h3>
+            <%connections.forEach(connection=>{%>
+                <%if(title === connection.topic){%>
+                    <a class="event" href = "/connections/<%= connection.id%>"><p class="connections"><%= connection.title%></p></a>
+                <%}%>
+        <% }); %>
+    <%});%>
+<%}%>        
+
+
+</div>
+<%- include('../partials/footer.ejs')%>
+
+
+
+
+
+
